@@ -5,10 +5,206 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
     <title>Rui Jie's Portfolio</title>
 </head>
 <body>
-    <p class="text-center text-blue-700">Hello</p>
+    <div class="container flex flex-row w-full">
+        <aside class="flex flex-col sticky top-0 bg-neutral-800 justify-between h-screen py-4" id="menu">
+            <a href="/#content" class="fa fa-home fa-3x self-center hover:scale-110 hover:text-blue-200"></a>
+
+            <div class="navigation flex flex-col items-center">
+                <a href="/#about" class="menu-item hover:scale-125 hover:text-blue-200">About me</a>
+                <a href="/#experience" class="menu-item hover:scale-125 hover:text-blue-200">Experience</a>
+                <a href="/#contact" class="menu-item hover:scale-125 hover:text-blue-200">Contact</a>
+            </div>
+            <div class="flex flex-col justify-center">
+                <div class="flex flex-row justify-center">
+                    <a href="https://github.com/rjkoh" class="fa fa-github fa-lg hover:scale-125 hover:text-blue-200"></a>
+                    <a href="https://www.linkedin.com/in/kohruijie/" class="fa fa-linkedin fa-lg hover:scale-125 hover:text-blue-200"></a>
+                    <a href="mailto:ruijiekoh@u.nus.edu" class="fa fa-envelope fa-lg hover:scale-125 hover:text-blue-200"></a>
+                </div>
+                <div class="self-center pt-4 hover:scale-125">
+                    <a href="./assets/docs/Koh Rui Jie Resume.pdf" target="_blank" class="menu-item hover:scale-125 hover:text-blue-200 border-2 rounded-md border-blue-500">Resume</a>
+                </div>
+            </div>
+        </aside>
+        <main class="main" id="content">
+            <div class="border-2 border-black px-36 m-5">
+                <p>Hello, my name is</p>
+                <h1>Koh Rui Jie</h1>
+                <h3>Aspiring Software Engineer</h3>
+                <p>Result-driven Computer Science student skilled in Python and JavaScript (React Native) and adept at working in teams. Seeking
+                    Software Engineering internship to allow me to continue learning and developing as a computer scientist alongside highly capable
+                    individuals</p>
+
+                <div class="languages flex flex-col border-2 border-red-400">
+                    <div class="frontend flex flex-col">
+                        <p>Frontend</p>
+                        <div class="frontend-languages flex flex-row flex-wrap bg-white p-5">
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/React-icon.svg/512px-React-icon.svg.png?20220125121207" class="frontend-language-icon" alt="React"/>
+                            <img src="https://cdn-icons-png.flaticon.com/512/5968/5968267.png" class="frontend-language-icon" alt="HTML 5"/>
+                            <img src="https://cdn.pixabay.com/photo/2017/08/05/11/16/logo-2582747_960_720.png" class="frontend-language-icon" alt="CSS 3"/>
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/Tailwind_CSS_Logo.svg/1200px-Tailwind_CSS_Logo.svg.png" class="frontend-language-icon" alt="Tailwind"/>
+                            <img src="https://cdn-icons-png.flaticon.com/512/5968/5968292.png" class="frontend-language-icon" alt="JavaScript"/>
+                        </div>
+                    </div>
+                    <div class="backend flex flex-col">
+                        <p>Backend</p>
+                        <div class="backedn-languages flex flex-row flex-wrap bg-white p-5">
+                            <img src="https://cdn-icons-png.flaticon.com/512/5968/5968282.png" class="backend-language-icon" alt="Java"/>
+                            <img src="https://cdn3.iconfinder.com/data/icons/logos-and-brands-adobe/512/267_Python-512.png" class="backend-language-icon" alt="Python"/>
+                            <img src="https://www.svgrepo.com/show/303658/nodejs-1-logo.svg" class="backend-language-icon" alt="NodeJS"/>
+                            <img src="https://cdn-icons-png.flaticon.com/512/6132/6132222.png" class="backend-language-icon" alt="C++"/>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    
+            <div id="about" class="border-2 border-green-800 p-20 m-5">
+                <div class="introduction flex flex-row mb-10">
+                    <p class="self-center mr-10 w-8/12">About me.</p>   
+                    <img src="./assets/images/profile.jpeg" alt="Profile Picture" id="profile" class="w-4/12"/>
+                </div>
+                
+
+                <div class="education-container">
+                    <h3 class="text-lg">Education</h3>
+                    
+                    <!-- Timeline is adapted from florian-lefebvre on Tailwind Components-->
+                    <div class="timeline-container">
+                        <div
+                          class="flex flex-col md:grid grid-cols-9 mx-auto p-2 text-blue-50"
+                        >
+                          <!-- left -->
+                          <div class="flex flex-row-reverse md:contents">
+                            <div
+                              class="bg-blue-500 col-start-1 col-end-5 p-4 rounded-xl my-4 ml-auto shadow-md"
+                            >
+                              <h3 class="font-semibold text-lg mb-1">National University of Singapore</h3>
+                              <p class="leading-tight text-justify">
+                                Computer Science
+                              </p>
+                            </div>
+                            <div class="col-start-5 col-end-6 md:mx-auto relative mr-10">
+                              <div class="h-full w-6 flex items-center justify-center">
+                                <div class="h-full w-1 bg-blue-800 pointer-events-none"></div>
+                              </div>
+                              <div
+                                class="w-6 h-6 absolute top-1/2 -mt-3 rounded-full bg-blue-500 shadow"
+                              ></div>
+                            </div>
+                          </div>
+
+                          <!-- right -->
+                          <div class="flex md:contents">
+                            <div class="col-start-5 col-end-6 mr-10 md:mx-auto relative">
+                              <div class="h-full w-6 flex items-center justify-center">
+                                <div class="h-full w-1 bg-blue-800 pointer-events-none"></div>
+                              </div>
+                              <div
+                                class="w-6 h-6 absolute top-1/2 -mt-3 rounded-full bg-blue-500 shadow"
+                              ></div>
+                            </div>
+                            <div
+                              class="bg-blue-500 col-start-6 col-end-10 p-4 rounded-xl my-4 mr-auto shadow-md"
+                            >
+                              <h3 class="font-semibold text-lg mb-1">Dunman High School</h3>
+                              <ul class="leading-tight">
+                                <li>H2 Physics</li>
+                                <li>H2 Chemistry</li>
+                                <li>H2 Economics</li>
+                                <li>H2 Mathematics</li>
+                                <li>H3 Pharmaceutical Chemistry</li>
+                              </ul>
+                            </div>
+                          </div>
+                          <!-- left -->
+                          <div class="flex flex-row-reverse md:contents">
+                            <div
+                              class="bg-blue-500 col-start-1 col-end-5 p-4 rounded-xl my-4 ml-auto shadow-md"
+                            >
+                              <h3 class="font-semibold text-lg mb-1">Dunman High School</h3>
+                              <p class="leading-tight text-justify">
+                                Double Science
+                              </p>
+                            </div>
+                            <div class="col-start-5 col-end-6 md:mx-auto relative mr-10">
+                              <div class="h-full w-6 flex items-center justify-center">
+                                <div class="h-full w-1 bg-blue-800 pointer-events-none"></div>
+                              </div>
+                              <div
+                                class="w-6 h-6 absolute top-1/2 -mt-3 rounded-full bg-blue-500 shadow"
+                              ></div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                
+                </div>  
+            </div>
+    
+            <div id="experience" class="border-2 border-blue-800 p-20 m-5">
+                <div>
+                    <h3 class="text-lg">My working Experience</h3>
+                    
+                    <!-- Timeline is adapted from florian-lefebvre on Tailwind Components-->
+                    <div class="timeline-container">
+                        <div
+                          class="flex flex-col md:grid grid-cols-9 mx-auto p-2 text-blue-50"
+                        >
+                            <!-- left -->
+                            <div class="flex flex-row-reverse md:contents">
+                                <div
+                                class="bg-blue-500 col-start-1 col-end-5 p-4 rounded-xl my-4 ml-auto shadow-md"
+                                >
+                                    <h3 class="font-semibold text-lg mb-1">Gleneagles Medical Centre</h3>
+                                    <p class="leading-tight text-justify">
+                                        Operations and Admin Assistant
+                                    </p>
+                                </div>
+                                <div class="col-start-5 col-end-6 md:mx-auto relative mr-10">
+                                    <div class="h-full w-6 flex items-center justify-center">
+                                        <div class="h-full w-1 bg-blue-800 pointer-events-none"></div>
+                                    </div>
+                                    <div
+                                        class="w-6 h-6 absolute top-1/2 -mt-3 rounded-full bg-blue-500 shadow"
+                                    ></div>
+                                </div>
+                            </div>
+
+                            <!-- right -->
+                            <div class="flex md:contents">
+                                <div class="col-start-5 col-end-6 mr-10 md:mx-auto relative">
+                                    <div class="h-full w-6 flex items-center justify-center">
+                                        <div class="h-full w-1 bg-blue-800 pointer-events-none"></div>
+                                    </div>
+                                    <div
+                                        class="w-6 h-6 absolute top-1/2 -mt-3 rounded-full bg-blue-500 shadow"
+                                    ></div>
+                                </div>
+                                <div
+                                    class="bg-blue-500 col-start-6 col-end-10 p-4 rounded-xl my-4 mr-auto shadow-md"
+                                >
+                                    <h3 class="font-semibold text-lg mb-1">Singapore Armed Forces</h3>
+                                    <p>Artillery Officer</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div> 
+
+                <div>
+                    <p>Projects I have done</p>
+
+                </div>
+            </div>
+
+            <div id="contact" class="border-2 border-red-800 p-20 m-5">
+                <p>Contact me at</p>
+            </div>
+        </div>
+    </main>
 </body>
 </html>
