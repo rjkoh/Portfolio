@@ -4,17 +4,15 @@
 
 * {
     box-sizing: border-box;
-  }
-  
-  /* Set a background color */
-  body {
+}
+   
+body {
     background-color: #1D1D1D;
     color: white;
-  }
+}
 
 #menu {
-    visibility: hidden;
-    width: 0%;
+    flex-direction: row;
 }
 
 #content {
@@ -35,6 +33,7 @@
     width: 10%;
     margin-top: 5%;
     margin-right: 15%;
+    padding: 5px;
 }
 
 .frontend-language-icon {
@@ -49,10 +48,38 @@
     padding: 5px;
 }
 
+.content-container {
+    width: 100vw;
+}
+
 @media (min-width: 768px) {
+    .container {
+        flex-direction: row;
+    }
+
+    .navigation, #details {
+        flex-direction: column;
+    }
+    
     #menu {
         visibility: visible;
         width: 15%;
+        flex-direction: column;
+        height: 100vh;
+        justify-content: space-between;
     }
 
+    #home {
+        align-self: center;
+    }
+
+    #resume {
+        padding-top: 1rem;
+        margin-bottom: 1rem;
+        margin-left: 0;
+    }
+
+    .content-container {
+        width: 85vw;
+    }
 }

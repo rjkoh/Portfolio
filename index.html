@@ -4,34 +4,37 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="./hallinoneImages.js"></script>
     <link rel="stylesheet" href="./style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
     <title>Rui Jie's Portfolio</title>
 </head>
 <body>
-    <div class="container flex flex-row w-full">
-        <aside class="flex flex-col sticky top-0 bg-neutral-800 justify-between h-screen py-4" id="menu">
-            <a href="/#content" class="fa fa-home fa-3x self-center hover:scale-110 hover:text-blue-200"></a>
+    <div class="container flex flex-col w-screen">
+        <aside class="flex flex-row sticky top-0 bg-neutral-800 justify-between w-screen pr-4 pl-2 h-min" id="menu">
+          <div id="home">
+            <a href="/#content" class="fa fa-home fa-3x hover:scale-110 hover:text-blue-200"></a>
+          </div>  
 
-            <div class="navigation flex flex-col items-center">
-                <a href="/#about" class="menu-item hover:scale-125 hover:text-blue-200">About me</a>
-                <a href="/#experience" class="menu-item hover:scale-125 hover:text-blue-200">Experience</a>
-                <a href="/#contact" class="menu-item hover:scale-125 hover:text-blue-200">Contact</a>
+            <div class="navigation flex flex-row items-center mr-2">
+                <a href="/#about" class="menu-item hover:scale-125 hover:text-blue-200 mx-1">About</a>
+                <a href="/#experience" class="menu-item hover:scale-125 hover:text-blue-200 mx-1">Experience</a>
+                <a href="/#contact" class="menu-item hover:scale-125 hover:text-blue-200 mx-1">Contact</a>
             </div>
-            <div class="flex flex-col justify-center">
-                <div class="flex flex-row justify-center">
-                    <a href="https://github.com/rjkoh" class="fa fa-github fa-lg hover:scale-125 hover:text-blue-200"></a>
-                    <a href="https://www.linkedin.com/in/kohruijie/" class="fa fa-linkedin fa-lg hover:scale-125 hover:text-blue-200"></a>
-                    <a href="mailto:ruijiekoh@u.nus.edu" class="fa fa-envelope fa-lg hover:scale-125 hover:text-blue-200"></a>
+            <div class="flex flex-row justify-center" id="details">
+                <div class="flex flex-row justify-between self-center">
+                    <a href="https://github.com/rjkoh" class="fa fa-github fa-lg hover:scale-125 hover:text-blue-200 mx-1"></a>
+                    <a href="https://www.linkedin.com/in/kohruijie/" class="fa fa-linkedin fa-lg hover:scale-125 hover:text-blue-200 mx-1"></a>
+                    <a href="mailto:ruijiekoh@u.nus.edu" class="fa fa-envelope fa-lg hover:scale-125 hover:text-blue-200 mx-1"></a>
                 </div>
-                <div class="self-center pt-4 hover:scale-125">
-                    <a href="./assets/docs/Koh Rui Jie Resume.pdf" target="_blank" class="menu-item hover:scale-125 hover:text-blue-200 border-2 rounded-md border-blue-500">Resume</a>
+                <div class="self-center hover:scale-125 ml-3" id="resume">
+                    <a href="./assets/docs/Koh Rui Jie Resume.pdf" target="_blank" class="menu-item hover:scale-125 hover:text-blue-200 border-2 rounded-md border-blue-500 mx-2">Resume</a>
                 </div>
             </div>
         </aside>
-        <main class="main" id="content">
-            <div class="border-2 border-black px-36 m-5">
+        <main class="main w-screen" id="content">
+            <div class="border-2 border-black p-20 content-container" id="main">
                 <p>Hello, my name is</p>
                 <h1>Koh Rui Jie</h1>
                 <h3>Aspiring Software Engineer</h3>
@@ -52,7 +55,7 @@
                     </div>
                     <div class="backend flex flex-col">
                         <p>Backend</p>
-                        <div class="backedn-languages flex flex-row flex-wrap bg-white p-5">
+                        <div class="backend-languages flex flex-row flex-wrap bg-white p-5">
                             <img src="https://cdn-icons-png.flaticon.com/512/5968/5968282.png" class="backend-language-icon" alt="Java"/>
                             <img src="https://cdn3.iconfinder.com/data/icons/logos-and-brands-adobe/512/267_Python-512.png" class="backend-language-icon" alt="Python"/>
                             <img src="https://www.svgrepo.com/show/303658/nodejs-1-logo.svg" class="backend-language-icon" alt="NodeJS"/>
@@ -62,7 +65,7 @@
                 </div>
             </div>
     
-            <div id="about" class="border-2 border-green-800 p-20 m-5">
+            <div id="about" class="border-2 border-green-800 p-20 content-container">
                 <div class="introduction flex flex-row mb-10">
                     <p class="self-center mr-10 w-8/12">About me.</p>   
                     <img src="./assets/images/profile.jpeg" alt="Profile Picture" id="profile" class="w-4/12"/>
@@ -86,6 +89,7 @@
                               <p class="leading-tight text-justify">
                                 Computer Science
                               </p>
+                              
                             </div>
                             <div class="col-start-5 col-end-6 md:mx-auto relative mr-10">
                               <div class="h-full w-6 flex items-center justify-center">
@@ -145,7 +149,7 @@
                 </div>  
             </div>
     
-            <div id="experience" class="border-2 border-blue-800 p-20 m-5">
+            <div id="experience" class="border-2 border-blue-800 p-20 content-container">
                 <div>
                     <h3 class="text-lg">My working Experience</h3>
                     
@@ -198,10 +202,23 @@
                 <div>
                     <p>Projects I have done</p>
 
+                    <div class="flex flex-col">
+                      <div class="flex flex-row justify-between">
+                        <div>
+                          <img src="./assets/images/hallinone/1.png" id="hallinone" alt="hALLinOne UI"/>
+                        </div>
+
+                        <div class="flex flex-col self-center">
+                          <h3>hALLinOne</h3>
+                          <h4>A booking application for common facilities in hall</h4>
+                          <p>Written in React Native</p>
+                        </div>
+                      </div>
+                    </div>
                 </div>
             </div>
 
-            <div id="contact" class="border-2 border-red-800 p-20 m-5">
+            <div id="contact" class="border-2 border-red-800 p-20 content-container">
                 <p>Contact me at</p>
             </div>
         </div>
