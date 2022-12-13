@@ -23,6 +23,7 @@ body {
 
 #menu {
     flex-direction: row;
+    overflow-x: hidden;
 }
 
 #content {
