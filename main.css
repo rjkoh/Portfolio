@@ -10,6 +10,7 @@ body {
     background-color: #1F1F1F;
     color: white;
     font-family: 'Roboto Mono', monospace;
+    overflow-x: hidden;
 }
 
 .font-title {
