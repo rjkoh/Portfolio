@@ -7,8 +7,17 @@
 }
    
 body {
-    background-color: #1D1D1D;
+    background-color: #1F1F1F;
     color: white;
+    font-family: 'Roboto Mono', monospace;
+}
+
+.font-title {
+    font-family: 'Rubik 80s Fade', cursive;
+}
+
+.font-subtitle {
+    font-family: 'Zen Dots', cursive;
 }
 
 #menu {

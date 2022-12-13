@@ -1,239 +1,356 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="./hallinoneImages.js"></script>
-    <link rel="stylesheet" href="./style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="./hallinoneImages.js"></script>
+  <script src="./WorkExperience.js"></script>
+  <link rel="stylesheet" href="./style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;500&family=Rubik+80s+Fade&family=Zen+Dots&display=swap"
+    rel="stylesheet">
 
-    <title>Rui Jie's Portfolio</title>
+  <title>Rui Jie's Portfolio</title>
 </head>
+
 <body>
-    <div class="container flex flex-col w-screen">
-        <aside class="flex flex-row sticky top-0 bg-neutral-800 justify-between w-screen pr-4 pl-2 h-min" id="menu">
-          <div id="home">
-            <a href="index.html#content" class="fa fa-home fa-3x hover:scale-110 hover:text-blue-200"></a>
-          </div>  
+  <div class="container flex flex-col w-screen">
+    <aside class="flex flex-row sticky top-0 bg-neutral-800 justify-between w-screen pr-4 pl-2 h-min z-0" id="menu">
+      <div id="home">
+        <a href="index.html#content" class="fa fa-home fa-3x hover:scale-110 hover:text-cybergreen"></a>
+      </div>
 
-            <div class="navigation flex flex-row items-center mr-2">
-                <a href="index.html#about" class="menu-item hover:scale-125 hover:text-blue-200 mx-1">About</a>
-                <a href="index.html#experience" class="menu-item hover:scale-125 hover:text-blue-200 mx-1">Experience</a>
-                <a href="index.html#contact" class="menu-item hover:scale-125 hover:text-blue-200 mx-1">Contact</a>
-            </div>
-            <div class="flex flex-row justify-center" id="details">
-                <div class="flex flex-row justify-between self-center">
-                    <a href="https://github.com/rjkoh" class="fa fa-github fa-lg hover:scale-125 hover:text-blue-200 mx-1"></a>
-                    <a href="https://www.linkedin.com/in/kohruijie/" class="fa fa-linkedin fa-lg hover:scale-125 hover:text-blue-200 mx-1"></a>
-                    <a href="mailto:ruijiekoh@u.nus.edu" class="fa fa-envelope fa-lg hover:scale-125 hover:text-blue-200 mx-1"></a>
-                </div>
-                <div class="self-center hover:scale-125 ml-3" id="resume">
-                    <a href="./assets/docs/Koh Rui Jie Resume.pdf" target="_blank" class="menu-item hover:scale-125 hover:text-blue-200 border-2 rounded-md border-blue-500 mx-2">Resume</a>
-                </div>
-            </div>
-        </aside>
-        <main class="main w-screen" id="content">
-            <div class="border-2 border-black p-20 content-container" id="main">
-                <p>Hello, my name is</p>
-                <h1>Koh Rui Jie</h1>
-                <h3>Aspiring Software Engineer</h3>
-                <p>Result-driven Computer Science student skilled in Python and JavaScript (React Native) and adept at working in teams. Seeking
-                    Software Engineering internship to allow me to continue learning and developing as a computer scientist alongside highly capable
-                    individuals</p>
-
-                <div class="languages flex flex-col border-2 border-red-400">
-                    <div class="frontend flex flex-col">
-                        <p>Frontend</p>
-                        <div class="frontend-languages flex flex-row flex-wrap bg-white p-5">
-                            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/React-icon.svg/512px-React-icon.svg.png?20220125121207" class="frontend-language-icon" alt="React"/>
-                            <img src="https://cdn-icons-png.flaticon.com/512/5968/5968267.png" class="frontend-language-icon" alt="HTML 5"/>
-                            <img src="https://cdn.pixabay.com/photo/2017/08/05/11/16/logo-2582747_960_720.png" class="frontend-language-icon" alt="CSS 3"/>
-                            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/Tailwind_CSS_Logo.svg/1200px-Tailwind_CSS_Logo.svg.png" class="frontend-language-icon" alt="Tailwind"/>
-                            <img src="https://cdn-icons-png.flaticon.com/512/5968/5968292.png" class="frontend-language-icon" alt="JavaScript"/>
-                        </div>
-                    </div>
-                    <div class="backend flex flex-col">
-                        <p>Backend</p>
-                        <div class="backend-languages flex flex-row flex-wrap bg-white p-5">
-                            <img src="https://cdn-icons-png.flaticon.com/512/5968/5968282.png" class="backend-language-icon" alt="Java"/>
-                            <img src="https://cdn3.iconfinder.com/data/icons/logos-and-brands-adobe/512/267_Python-512.png" class="backend-language-icon" alt="Python"/>
-                            <img src="https://www.svgrepo.com/show/303658/nodejs-1-logo.svg" class="backend-language-icon" alt="NodeJS"/>
-                            <img src="https://cdn-icons-png.flaticon.com/512/6132/6132222.png" class="backend-language-icon" alt="C++"/>
-                        </div>
-                    </div>
-                </div>
-            </div>
-    
-            <div id="about" class="border-2 border-green-800 p-20 content-container">
-                <div class="introduction flex flex-row mb-10">
-                    <p class="self-center mr-10 w-8/12">About me.</p>   
-                    <img src="./assets/images/profile.jpeg" alt="Profile Picture" id="profile" class="w-4/12"/>
-                </div>
-                
-
-                <div class="education-container">
-                    <h3 class="text-lg">Education</h3>
-                    
-                    <!-- Timeline is adapted from florian-lefebvre on Tailwind Components-->
-                    <div class="timeline-container">
-                        <div
-                          class="flex flex-col md:grid grid-cols-9 mx-auto p-2 text-blue-50"
-                        >
-                          <!-- left -->
-                          <div class="flex flex-row-reverse md:contents">
-                            <div
-                              class="bg-blue-500 col-start-1 col-end-5 p-4 rounded-xl my-4 ml-auto shadow-md"
-                            >
-                              <h3 class="font-semibold text-lg mb-1">National University of Singapore</h3>
-                              <p class="leading-tight text-justify">
-                                Computer Science
-                              </p>
-                              
-                            </div>
-                            <div class="col-start-5 col-end-6 md:mx-auto relative mr-10">
-                              <div class="h-full w-6 flex items-center justify-center">
-                                <div class="h-full w-1 bg-blue-800 pointer-events-none"></div>
-                              </div>
-                              <div
-                                class="w-6 h-6 absolute top-1/2 -mt-3 rounded-full bg-blue-500 shadow"
-                              ></div>
-                            </div>
-                          </div>
-
-                          <!-- right -->
-                          <div class="flex md:contents">
-                            <div class="col-start-5 col-end-6 mr-10 md:mx-auto relative">
-                              <div class="h-full w-6 flex items-center justify-center">
-                                <div class="h-full w-1 bg-blue-800 pointer-events-none"></div>
-                              </div>
-                              <div
-                                class="w-6 h-6 absolute top-1/2 -mt-3 rounded-full bg-blue-500 shadow"
-                              ></div>
-                            </div>
-                            <div
-                              class="bg-blue-500 col-start-6 col-end-10 p-4 rounded-xl my-4 mr-auto shadow-md"
-                            >
-                              <h3 class="font-semibold text-lg mb-1">Dunman High School</h3>
-                              <ul class="leading-tight">
-                                <li>H2 Physics</li>
-                                <li>H2 Chemistry</li>
-                                <li>H2 Economics</li>
-                                <li>H2 Mathematics</li>
-                                <li>H3 Pharmaceutical Chemistry</li>
-                              </ul>
-                            </div>
-                          </div>
-                          <!-- left -->
-                          <div class="flex flex-row-reverse md:contents">
-                            <div
-                              class="bg-blue-500 col-start-1 col-end-5 p-4 rounded-xl my-4 ml-auto shadow-md"
-                            >
-                              <h3 class="font-semibold text-lg mb-1">Dunman High School</h3>
-                              <p class="leading-tight text-justify">
-                                Double Science
-                              </p>
-                            </div>
-                            <div class="col-start-5 col-end-6 md:mx-auto relative mr-10">
-                              <div class="h-full w-6 flex items-center justify-center">
-                                <div class="h-full w-1 bg-blue-800 pointer-events-none"></div>
-                              </div>
-                              <div
-                                class="w-6 h-6 absolute top-1/2 -mt-3 rounded-full bg-blue-500 shadow"
-                              ></div>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                
-                </div>  
-            </div>
-    
-            <div id="experience" class="border-2 border-blue-800 p-20 content-container">
-                <div>
-                    <h3 class="text-lg">My working Experience</h3>
-                    
-                    <!-- Timeline is adapted from florian-lefebvre on Tailwind Components-->
-                    <div class="timeline-container">
-                        <div
-                          class="flex flex-col md:grid grid-cols-9 mx-auto p-2 text-blue-50"
-                        >
-                            <!-- left -->
-                            <div class="flex flex-row-reverse md:contents">
-                                <div
-                                class="bg-blue-500 col-start-1 col-end-5 p-4 rounded-xl my-4 ml-auto shadow-md"
-                                >
-                                    <h3 class="font-semibold text-lg mb-1">Gleneagles Medical Centre</h3>
-                                    <p class="leading-tight text-justify">
-                                        Operations and Admin Assistant
-                                    </p>
-                                </div>
-                                <div class="col-start-5 col-end-6 md:mx-auto relative mr-10">
-                                    <div class="h-full w-6 flex items-center justify-center">
-                                        <div class="h-full w-1 bg-blue-800 pointer-events-none"></div>
-                                    </div>
-                                    <div
-                                        class="w-6 h-6 absolute top-1/2 -mt-3 rounded-full bg-blue-500 shadow"
-                                    ></div>
-                                </div>
-                            </div>
-
-                            <!-- right -->
-                            <div class="flex md:contents">
-                                <div class="col-start-5 col-end-6 mr-10 md:mx-auto relative">
-                                    <div class="h-full w-6 flex items-center justify-center">
-                                        <div class="h-full w-1 bg-blue-800 pointer-events-none"></div>
-                                    </div>
-                                    <div
-                                        class="w-6 h-6 absolute top-1/2 -mt-3 rounded-full bg-blue-500 shadow"
-                                    ></div>
-                                </div>
-                                <div
-                                    class="bg-blue-500 col-start-6 col-end-10 p-4 rounded-xl my-4 mr-auto shadow-md"
-                                >
-                                    <h3 class="font-semibold text-lg mb-1">Singapore Armed Forces</h3>
-                                    <p>Artillery Officer</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div> 
-
-                <div>
-                    <p>Projects I have done</p>
-
-                    <div class="flex flex-col">
-                      <div class="flex md:flex-row justify-around flex-col my-5">
-                        <div class="self-center w-1/2 md:w-1/3">
-                          <img src="./assets/images/hallinone/1.png" id="hallinone" alt="hALLinOne UI" width="90%">
-                        </div>
-
-                        <div class="flex flex-col self-center my-3 md:my-0">
-                          <h3>hALLinOne</h3>
-                          <h4>A booking application for common facilities in hall</h4>
-                          <p>Written in React Native</p>
-                        </div>
-                      </div>
-
-                      <div class="flex lg:flex-row justify-between flex-col my-5">
-                        <div class="lg:order-2 self-center lg:w-2/3">
-                          <img src="./assets/images/ConnectNUS.png" alt="hALLinOne UI" width="90%"/>
-                        </div>
-
-                        <div class="flex flex-col self-center md:order-1 my-3 lg:my-0">
-                          <h3>ConnectNUS</h3>
-                          <h4>A desktop application for Module Planning</h4>
-                          <p>Written in Java</p>
-                        </div>
-                      </div>
-                    </div>
-                </div>
-            </div>
-
-            <div id="contact" class="border-2 border-red-800 p-20 content-container">
-                <p>Contact me at</p>
-            </div>
+      <div class="navigation flex flex-row items-center mr-2">
+        <a href="index.html#about" class="menu-item hover:scale-125 hover:text-cyberlightblue mx-1">About</a>
+        <a href="index.html#experience" class="menu-item hover:scale-125 hover:text-cyberlightblue mx-1">Experience</a>
+        <a href="index.html#contact" class="menu-item hover:scale-125 hover:text-cyberlightblue mx-1">Contact</a>
+      </div>
+      <div class="flex flex-row justify-center" id="details">
+        <div class="flex flex-row justify-between self-center">
+          <a href="https://github.com/rjkoh" class="fa fa-github fa-lg hover:scale-125 hover:text-cyberpink mx-1"></a>
+          <a href="https://www.linkedin.com/in/kohruijie/"
+            class="fa fa-linkedin fa-lg hover:scale-125 hover:text-cyberpink mx-1"></a>
+          <a href="mailto:ruijiekoh@u.nus.edu"
+            class="fa fa-envelope fa-lg hover:scale-125 hover:text-cyberpink mx-1"></a>
         </div>
+        <div class="self-center hover:scale-110 hover:text-cybergreen ml-3" id="resume">
+          <a href="./assets/docs/Koh Rui Jie Resume.pdf" target="_blank"
+            class="menu-item hover:scale-110 hover:text-cybergreen border-4 rounded-md border-cybergreen mx-2">Resume</a>
+        </div>
+      </div>
+    </aside>
+    <main class="main w-screen" id="content">
+      <div class="p-20 content-container" id="main">
+        <div class="h-screen flex flex-col">
+          <div class="border-cybergreen border-b-2 border-r-2 rounded-xl shadow-neutral-500 shadow-lg px-2 py-8">
+            <p class="ml-2 mt-2">Hello, my name is</p>
+            <h1 class="text-5xl sm:text-6xl md:text-7xl text-cyberlightblue font-title px-5 sm:px-10 py-5">Koh Rui Jie
+            </h1>
+            <h3 class="text-2xl sm:text-4xl md:text-4xl text-cyberpink font-subtitle px-5 sm:px-10 py-2">Aspiring
+              Full-Stack Software Engineer</h3>
+            <p class="sm:text-lg px-5 sm:px-10">
+              Result-driven Computer Science student skilled in Python and JavaScript (React Native) and adept at
+              working
+              in teams. Seeking
+              Software Engineering internship to allow me to continue learning and developing as a computer scientist
+              alongside highly capable
+              individuals
+            </p>
+          </div>
+
+          <div class="flex flex-row justify-center invisible md:visible">
+            <i class="fa fa-desktop m-0 fa-5x text-cyberblue"></i>
+            <i class="fa fa-keyboard-o m-0 fa-5x text-cyberblue"></i>
+          </div>
+        </div>
+
+        <div class="languages flex flex-col h-screen">
+          <p class="font-subtitle text-4xl p-2 mb-2">Languages and Frameworks</p>
+          <div
+            class="frontend flex flex-col border-l-2 border-l-cyberlightblue border-b-2 border-b-cyberblue p-2 border-t-cybergreen border-t-2 rounded-md">
+            <p class="text-2xl">Frontend</p>
+            <div class="frontend-languages flex flex-row flex-wrap p-5">
+              <img
+                src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/React-icon.svg/512px-React-icon.svg.png?20220125121207"
+                class="frontend-language-icon" alt="React" />
+              <img src="https://cdn-icons-png.flaticon.com/512/5968/5968267.png" class="frontend-language-icon"
+                alt="HTML 5" />
+              <img src="https://cdn.pixabay.com/photo/2017/08/05/11/16/logo-2582747_960_720.png"
+                class="frontend-language-icon" alt="CSS 3" />
+              <img
+                src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/Tailwind_CSS_Logo.svg/1200px-Tailwind_CSS_Logo.svg.png"
+                class="frontend-language-icon" alt="Tailwind" />
+              <img src="https://cdn-icons-png.flaticon.com/512/5968/5968292.png" class="frontend-language-icon"
+                alt="JavaScript" />
+            </div>
+          </div>
+          <div
+            class="backend flex flex-col border-r-2 border-r-cyberpurple border-b-2 border-b-cyberpurple p-2 rounded-md">
+            <p class="text-2xl">Backend</p>
+            <div class="backend-languages flex flex-row flex-wrap p-5">
+              <img src="https://cdn-icons-png.flaticon.com/512/5968/5968282.png" class="backend-language-icon"
+                alt="Java" />
+              <img src="https://cdn3.iconfinder.com/data/icons/logos-and-brands-adobe/512/267_Python-512.png"
+                class="backend-language-icon" alt="Python" />
+              <img src="https://www.svgrepo.com/show/303658/nodejs-1-logo.svg" class="backend-language-icon"
+                alt="NodeJS" />
+              <img src="https://cdn-icons-png.flaticon.com/512/6132/6132222.png" class="backend-language-icon"
+                alt="C++" />
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div id="about" class="p-20 content-container">
+        <div class=" min-h-screen">
+          <h1 class="font-title text-4xl text-cybergreen">About Me</h1>
+          <div
+            class="introduction flex flex-col mb-10 mt-8 border-t-2 border-l-2 border-t-cyberlightblue border-l-cybergreen rounded-xl p-4 md:flex-row">
+            <p class="self-center mr-10 w-8/12">
+              Hello!<br>
+              <br>
+              I am Rui Jie, a current Year 2 Student at National University of Singapore, majoring in Computer Science
+              and Business Adminstration Double Degree Program.<br>
+              <br>
+              My interest started out from curiosity through learning how to build my own telegram bot, which blossomed
+              into a passion for software engineering. I am a driven individual with a knack
+              for leadership, teamwork, and problem-solving. Through my various modules and my own project, I have
+              learnt numerous frontend and backend softwares, which you may find out more about here on this
+              website.<br>
+              <br>
+              In my free time, I enjoy running, gaming, and watching sports (Football, Basketball, and Formula 1).
+            </p>
+            <img src="./assets/images/profile.jpeg" alt="Profile Picture" id="profile"
+              class="w-4/12 border-4 border-cyberlightblue shadow-xl shadow-neutral-500 h-fit self-center mt-4 md:mt-0" />
+          </div>
+        </div>
+
+        <div class="education-container min-h-screen">
+          <h3 class="text-3xl font-subtitle text-cyberlightblue">Education</h3>
+
+          <!-- Timeline is adapted from florian-lefebvre on Tailwind Components-->
+          <div class="timeline-container">
+            <div class="flex flex-col md:grid grid-cols-9 mx-auto p-2 text-blue-50">
+              <!-- left -->
+              <div class="flex flex-row-reverse md:contents">
+                <div
+                  class="col-start-1 col-end-5 p-4 rounded-xl my-4 ml-auto shadow-lg shadow-neutral-500 border-4 border-cyberpink -z-10">
+                  <h3 class="font-semibold text-xl mb-1">National University of Singapore</h3>
+                  <h4 class="text-lg mb-2">2021-Present</h4>
+                  <p class="leading-snug">
+                    Computer Science and Business Administration Double Degree<br>
+                    First Class Honours<br>
+                    Global Merit Scholar
+                  </p>
+
+                </div>
+                <div class="col-start-5 col-end-6 md:mx-auto relative mr-10">
+                  <div class="h-full w-6 flex items-center justify-center">
+                    <div class="h-full w-1 bg-black pointer-events-none -z-10"></div>
+                  </div>
+                  <div
+                    class="w-6 h-6 absolute top-1/2 -mt-3 rounded-full bg-cyberpink -z-10 shadow-lg shadow-neutral-500 ">
+                  </div>
+                </div>
+              </div>
+
+              <!-- right -->
+              <div class="flex md:contents">
+                <div class="col-start-5 col-end-6 mr-10 md:mx-auto relative">
+                  <div class="h-full w-6 flex items-center justify-center">
+                    <div class="h-full w-1 bg-black pointer-events-none -z-10"></div>
+                  </div>
+                  <div
+                    class="w-6 h-6 absolute top-1/2 -mt-3 rounded-full bg-cyberpurple -z-10 shadow-lg shadow-neutral-500 ">
+                  </div>
+                </div>
+                <div
+                  class="border-cyberpurple border-4 col-start-6 col-end-10 p-4 rounded-xl my-4 mr-auto shadow-lg shadow-neutral-500  -z-10">
+                  <h3 class="font-semibold text-lg mb-1">Dunman High School</h3>
+                  <h4 class="text-lg mb-2">2017-2018</h4>
+                  <p class="leading-snug">
+                    4H2 Physics, Chemistry, Economics, Mathematics, H3 Pharmaceutical Chemistry<br>
+                    7 Distinctions in GCE A Levels
+                  </p>
+                </div>
+              </div>
+              <!-- left -->
+              <div class="flex flex-row-reverse md:contents">
+                <div
+                  class="border-cyberpink border-4 col-start-1 col-end-5 p-4 rounded-xl my-4 ml-auto shadow-lg shadow-neutral-500 -z-10">
+                  <h3 class="font-semibold text-lg mb-1">Dunman High School</h3>
+                  <h4 class="text-lg mb-2">2013-2016</h4>
+                  <p class="leading-tight text-justify">
+                    Triple Science<br>
+                    4.0 GPA
+                  </p>
+                </div>
+                <div class="col-start-5 col-end-6 md:mx-auto relative mr-10">
+                  <div class="h-full w-6 flex items-center justify-center">
+                    <div class="h-full w-1 bg-black pointer-events-none -z-10"></div>
+                  </div>
+                  <div
+                    class="w-6 h-6 absolute top-1/2 -mt-3 rounded-full bg-cyberpink shadow-lg shadow-neutral-500  -z-10">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <div id="experience" class="p-20 content-container">
+        <div class="mb-56">
+          <h2 class="font-title text-4xl text-cyberpink">Experience</h2>
+          <div class="mt-8 flex flex-col align-middle">
+            <h3 class="text-2xl font-subtitle mb-4">Working Experience</h3>
+
+            <div class="flex flex-col self-center sm:flex-row items-stretch">
+              <div
+                class="flex flex-col border-l-2 border-l-cyberblue border-t-2 border-t-cyberlightblue shadow-inner shadow-neutral-500 p-2 basis-1/3 rounded-xl">
+                <button class="p-2 hover:bg-neutral-700 hover:scale-105 basis-1/2 bg-neutral-700" id="gmc"
+                  onclick="updateWorkExperienceContent(1)">Gleneagles Medical Center</button>
+                <button class="p-2 hover:bg-neutral-700 hover:scale-105 basis-1/2" id="saf"
+                  onclick="updateWorkExperienceContent(0)">Singapore Armed Forces</button>
+              </div>
+
+              <div
+                class="mt-8 bg-neutral-800 p-4 border-r-2 border-b-2 border-r-cyberpink border-b-cyberpurple shadow-lg shadow-neutral-500 rounded-xl sm:ml-8 sm:mt-0">
+                <div id="workExperienceDetails" class="basis-2/3">
+                  <p class="font-bold text-xl mb-2">Mar 2021 - Jul 2021</p>
+                  <ul class="list-disc pl-5">
+                    <li>Liasing with vendors and customers through phone and email</li>
+                    <li>Ad-hoc support such as taking minutes, MS Office troubleshooting</li>
+                    <li>Managed projects such as renovations, involving meeting arrangements, planning and liasing</li>
+                  </ul>
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </div>
+
+        <div>
+          <p class="font-subtitle text-2xl mb-4">Project Features</p>
+
+          <div class="flex flex-col">
+            <div
+              class="flex md:flex-row justify-around flex-col border-t-4 border-l-4 border-b-4 p-8 border-t-cybergreen border-l-cyberlightblue border-b-cyberblue rounded">
+              <div class="self-center w-1/2 md:w-1/3">
+                <img src="./assets/images/hallinone/1.png" id="hallinone" alt="hALLinOne UI" class="basis-1/3">
+              </div>
+
+              <div class="flex flex-col self-center my-3 md:my-0 basis-2/3 md:ml-4">
+                <h3 class="font-title text-2xl text-cyberlightblue">hALLinOne</h3>
+                <h4 class="font-subtitle text-lg text-cyberpink">A booking mobile application for common facilities in
+                  hall</h4>
+                <p>
+                  Having seen many of my peers using ineffective platforms to reserve certain facilities, I wrote this application along with a partner to facilitate bookings. 
+                  Written in React Native (JavaScript) for the frontend and NodeJS for the backend, and supported with Firebase Authentication and Firestore.<br>
+                  <br>
+                  Engineered as part of Orbital 2022, achieving Apollo 11 (Advanced) level.
+                </p>
+                <button class="rounded-full border-4 border-cyberlightblue xl:w-1/4 w-5/12 self-center mt-4 hover:bg-neutral-700 hover:scale-105" onclick="window.open('https://github.com/rjkoh/hALLinOne-Orbital-22')">
+                  View Code →
+                </button>
+              </div>
+            </div>
+
+            <div class="flex lg:flex-row justify-between flex-col border-r-4 border-b-4 py-8 border-r-cyberpurple border-b-cyberpink rounded">
+              <div class="lg:order-2 lg:basis-2/3">
+                <img src="./assets/images/ConnectNUS.png" alt="hALLinOne UI" width="90%" />
+              </div>
+
+              <div class="flex flex-col self-center md:order-1 my-3 lg:my-0 lg:basis-1/3 lg:mr-8">
+                <h3 class="text-2xl font-title text-cybergreen">ConnectNUS</h3>
+                <h4 class="text-lg font-subtitle text-cyberblue">A desktop application for Module Planning</h4>
+                <p>
+                  A brownfield project engineered to tackle the lack of collaborative platforms during the Module Bidding exercise in NUS, in a team of 5 as part of a software engineering module. 
+                  Led the team in full-stack programming, testing and documentation (User and Developer Guide), as well as implementing CI.<br>
+                  <br>
+                  Written in Java as backend and JavaFX as frontend. Supported by Git, CSS, CodeCov, Gradle, Jekyll, GitHub Actions, and GitHub pages, as well as UML modelling with PlantUML.
+                </p>
+                <button class="rounded-full border-4 border-cybergreen xl:w-2/5 w-5/12 self-center mt-4 hover:bg-neutral-700 hover:scale-105" onclick="window.open('https://github.com/rjkoh/tp')">
+                  View Code →
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="flex flex-col mt-8">
+          <p class="font-subtitle text-lg">Other noteworthy projects</p>
+          <p class="text-sm mt-2 text-neutral-400">Click to view codebase!</p>
+
+          <div class="flex sm:flex-row flex-wrap justify-between flex-col mt-8">
+            <a class="bg-neutral-800 rounded-xl lg:basis-1/5 sm:basis-2/5 p-4 leading-tight hover:scale-105 hover:bg-neutral-700 mb-5 border-4 border-cyberlightblue shadow-lg shadow-neutral-500" 
+            href="https://github.com/rjkoh/ip" target="_blank">
+              <p class="font-title text-xl mb-2">Duke</p>
+              <p>
+                A chatbot to keep track of a user's tasks and deadlines. An application based on primarily the Command pattern and the MVC pattern.<br>
+                <br>
+                Written in Java with JavaFX, Git and JUnit.
+              </p>
+            </a>
+
+            <div class="bg-neutral-800 rounded-xl lg:basis-1/5 sm:basis-2/5 p-4 leading-tight mb-5 border-4 border-cyberblue shadow-lg shadow-neutral-500">
+              <p class="font-title text-xl mb-2">VentBot</p>
+              <p>
+                A Telegram bot to vent to and receive encouraging random replies from a list.<br>
+                <br>
+                Written in Python with Telegram API. <br>
+                <br>
+                Codebase unavailable.
+              </p>
+            </div>
+
+            <a class="bg-neutral-800 rounded-xl lg:basis-1/5 sm:basis-2/5 p-4 leading-tight hover:scale-105 hover:bg-neutral-700 mb-5 border-4 border-cyberpink shadow-lg shadow-neutral-500" 
+            href="https://github.com/rjkoh/Portfolio" target="_blank">
+              <p class="font-title text-xl mb-2">This Website</p>
+              <p>
+                An online portfolio with my details and projects.<br>
+                <br>
+                Written in HTML with Tailwind and Vanilla CSS. Supported by JavaScript.
+              </p>
+            </a>
+
+            <a class="bg-neutral-800 rounded-xl lg:basis-1/5 sm:basis-2/5 p-4 leading-tight hover:scale-105 hover:bg-neutral-700 mb-5 border-4 border-cyberpurple shadow-lg shadow-neutral-500" 
+            href="https://github.com/rjkoh/CS50x" target="_blank">
+              <p class="font-title text-xl mb-2">CS50x</p>
+              <p>
+                Harvard's introductory course to Computer Science, which I did before my freshman year to learn some programming.<br>
+                <br>
+                Written in C++ and Python.
+              </p>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div id="contact" class="p-20 content-container">
+        <div class="border-r-4 border-b-4 border-r-cyberblue border-b-cyberpurple p-8 rounded-xl shadow-lg shadow-neutral-500 flex flex-col">
+          <p class="text-3xl mb-2 font-subtitle">Get in touch</p>
+          <p class="text-sm mb-4 text-neutral-400">If you have any queries, my inbox is always open.</p>
+          <div class="flex flex-col w-4/5 lg:w-3/5 self-center">
+            <button
+              class="border-4 border-cyberpink w-2/5 self-start rounded-full hover:bg-neutral-700 hover:scale-110 mt-2 align-top"
+              id="send" onclick="window.open('mailto:ruijiekoh@u.nus.edu')">Say hello</button>
+            <button
+              class="border-4 border-cyberlightblue w-2/5 self-center rounded-full hover:bg-neutral-700 hover:scale-110 align-middle mt-2"
+              id="send" onclick="window.open('https://github.com/rjkoh')">View GitHub</button>
+            <button
+              class="border-4 border-cybergreen w-2/5 self-end rounded-full hover:bg-neutral-700 hover:scale-110 align-bottom mt-2"
+              id="send" onclick="window.open('https://www.linkedin.com/in/kohruijie/')">View Linkedin</button>
+          </div>
+        </div>
+      </div>
     </main>
 </body>
+
 </html>
