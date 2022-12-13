@@ -20,7 +20,7 @@
 
 <body>
   <div class="container flex flex-col w-screen">
-    <aside class="flex flex-row sticky top-0 bg-neutral-800 justify-between w-screen pr-4 pl-2 h-min z-0" id="menu">
+    <aside class="flex flex-row sticky top-0 bg-neutral-800 justify-between w-screen pr-4 pl-2 h-min z-50" id="menu">
       <div id="home">
         <a href="index.html#content" class="fa fa-home fa-3x hover:scale-110 hover:text-cybergreen"></a>
       </div>
@@ -47,7 +47,7 @@
     <main class="main w-screen" id="content">
       <div class="p-20 content-container" id="main">
         <div class="h-screen flex flex-col">
-          <div class="border-cybergreen border-b-2 border-r-2 rounded-xl shadow-neutral-500 shadow-lg px-2 py-8">
+          <div class="border-cybergreen border-b-2 border-r-2 rounded-xl shadow-neutral-500 shadow-lg px-2 py-8 hover:scale-105 hover:border-r-8 hover:border-b-8 hover:shadow-2xl hover:shadow-white">
             <p class="ml-2 mt-2">Hello, my name is</p>
             <h1 class="text-5xl sm:text-6xl md:text-7xl text-cyberlightblue font-title px-5 sm:px-10 py-5">Koh Rui Jie
             </h1>
@@ -63,9 +63,10 @@
             </p>
           </div>
 
-          <div class="flex flex-row justify-center invisible md:visible">
-            <i class="fa fa-desktop m-0 fa-5x text-cyberblue"></i>
-            <i class="fa fa-keyboard-o m-0 fa-5x text-cyberblue"></i>
+          <div class="flex flex-row justify-between self-center invisible md:visible w-full text-center">
+            <a href="https://github.com/rjkoh" class="fa fa-github fa-5x hover:scale-125 hover:text-cyberpurple mx-1 basis-1/3"></a>
+            <a href="https://www.linkedin.com/in/kohruijie/" class="fa fa-linkedin fa-5x hover:scale-125 hover:text-cyberpurple mx-1 basis-1/3"></a>
+            <a href="mailto:ruijiekoh@u.nus.edu" class="fa fa-envelope fa-5x hover:scale-125 hover:text-cyberpurple mx-1 basis-1/3"></a>
           </div>
         </div>
 
@@ -77,15 +78,15 @@
             <div class="frontend-languages flex flex-row flex-wrap p-5">
               <img
                 src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/React-icon.svg/512px-React-icon.svg.png?20220125121207"
-                class="frontend-language-icon" alt="React" />
-              <img src="https://cdn-icons-png.flaticon.com/512/5968/5968267.png" class="frontend-language-icon"
+                class="frontend-language-icon hover:scale-105" alt="React" />
+              <img src="https://cdn-icons-png.flaticon.com/512/5968/5968267.png" class="frontend-language-icon hover:scale-105"
                 alt="HTML 5" />
               <img src="https://cdn.pixabay.com/photo/2017/08/05/11/16/logo-2582747_960_720.png"
-                class="frontend-language-icon" alt="CSS 3" />
+                class="frontend-language-icon hover:scale-105" alt="CSS 3" />
               <img
                 src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/Tailwind_CSS_Logo.svg/1200px-Tailwind_CSS_Logo.svg.png"
-                class="frontend-language-icon" alt="Tailwind" />
-              <img src="https://cdn-icons-png.flaticon.com/512/5968/5968292.png" class="frontend-language-icon"
+                class="frontend-language-icon hover:scale-105" alt="Tailwind" />
+              <img src="https://cdn-icons-png.flaticon.com/512/5968/5968292.png" class="frontend-language-icon hover:scale-105"
                 alt="JavaScript" />
             </div>
           </div>
@@ -93,13 +94,13 @@
             class="backend flex flex-col border-r-2 border-r-cyberpurple border-b-2 border-b-cyberpurple p-2 rounded-md">
             <p class="text-2xl">Backend</p>
             <div class="backend-languages flex flex-row flex-wrap p-5">
-              <img src="https://cdn-icons-png.flaticon.com/512/5968/5968282.png" class="backend-language-icon"
+              <img src="https://cdn-icons-png.flaticon.com/512/5968/5968282.png" class="backend-language-icon hover:scale-105"
                 alt="Java" />
               <img src="https://cdn3.iconfinder.com/data/icons/logos-and-brands-adobe/512/267_Python-512.png"
-                class="backend-language-icon" alt="Python" />
-              <img src="https://www.svgrepo.com/show/303658/nodejs-1-logo.svg" class="backend-language-icon"
+                class="backend-language-icon hover:scale-105" alt="Python" />
+              <img src="https://www.svgrepo.com/show/303658/nodejs-1-logo.svg" class="backend-language-icon hover:scale-105"
                 alt="NodeJS" />
-              <img src="https://cdn-icons-png.flaticon.com/512/6132/6132222.png" class="backend-language-icon"
+              <img src="https://cdn-icons-png.flaticon.com/512/6132/6132222.png" class="backend-language-icon hover:scale-105"
                 alt="C++" />
             </div>
           </div>
@@ -126,7 +127,7 @@
               In my free time, I enjoy running, gaming, and watching sports (Football, Basketball, and Formula 1).
             </p>
             <img src="./assets/images/profile.jpeg" alt="Profile Picture" id="profile"
-              class="w-4/12 border-4 border-cyberlightblue shadow-xl shadow-neutral-500 h-fit self-center mt-4 md:mt-0" />
+              class="w-4/12 border-4 border-cyberlightblue shadow-xl shadow-neutral-500 h-fit self-center mt-4 md:mt-0 hover:border-8 hover:shadow-2xl hover:shadow-white" />
           </div>
         </div>
 
@@ -139,7 +140,7 @@
               <!-- left -->
               <div class="flex flex-row-reverse md:contents">
                 <div
-                  class="col-start-1 col-end-5 p-4 rounded-xl my-4 ml-auto shadow-lg shadow-neutral-500 border-4 border-cyberpink -z-10">
+                  class="col-start-1 col-end-5 p-4 rounded-xl my-4 ml-auto shadow-lg shadow-neutral-500 border-4 border-cyberpink z-0 hover:border-8 hover:shadow-white">
                   <h3 class="font-semibold text-xl mb-1">National University of Singapore</h3>
                   <h4 class="text-lg mb-2">2021-Present</h4>
                   <p class="leading-snug">
@@ -151,10 +152,10 @@
                 </div>
                 <div class="col-start-5 col-end-6 md:mx-auto relative mr-10">
                   <div class="h-full w-6 flex items-center justify-center">
-                    <div class="h-full w-1 bg-black pointer-events-none -z-10"></div>
+                    <div class="h-full w-1 bg-black pointer-events-none z-0"></div>
                   </div>
                   <div
-                    class="w-6 h-6 absolute top-1/2 -mt-3 rounded-full bg-cyberpink -z-10 shadow-lg shadow-neutral-500 ">
+                    class="w-6 h-6 absolute top-1/2 -mt-3 rounded-full bg-cyberpink z-0 shadow-lg shadow-neutral-500 ">
                   </div>
                 </div>
               </div>
@@ -163,14 +164,14 @@
               <div class="flex md:contents">
                 <div class="col-start-5 col-end-6 mr-10 md:mx-auto relative">
                   <div class="h-full w-6 flex items-center justify-center">
-                    <div class="h-full w-1 bg-black pointer-events-none -z-10"></div>
+                    <div class="h-full w-1 bg-black pointer-events-none z-0"></div>
                   </div>
                   <div
-                    class="w-6 h-6 absolute top-1/2 -mt-3 rounded-full bg-cyberpurple -z-10 shadow-lg shadow-neutral-500 ">
+                    class="w-6 h-6 absolute top-1/2 -mt-3 rounded-full bg-cyberpurple z-0 shadow-lg shadow-neutral-500">
                   </div>
                 </div>
                 <div
-                  class="border-cyberpurple border-4 col-start-6 col-end-10 p-4 rounded-xl my-4 mr-auto shadow-lg shadow-neutral-500  -z-10">
+                  class="border-cyberpurple border-4 col-start-6 col-end-10 p-4 rounded-xl my-4 mr-auto shadow-lg shadow-neutral-500 z-0 hover:border-8 hover:shadow-white">
                   <h3 class="font-semibold text-lg mb-1">Dunman High School</h3>
                   <h4 class="text-lg mb-2">2017-2018</h4>
                   <p class="leading-snug">
@@ -182,7 +183,7 @@
               <!-- left -->
               <div class="flex flex-row-reverse md:contents">
                 <div
-                  class="border-cyberpink border-4 col-start-1 col-end-5 p-4 rounded-xl my-4 ml-auto shadow-lg shadow-neutral-500 -z-10">
+                  class="border-cyberpink border-4 col-start-1 col-end-5 p-4 rounded-xl my-4 ml-auto shadow-lg shadow-neutral-500 z-0 hover:border-8 hover:shadow-white">
                   <h3 class="font-semibold text-lg mb-1">Dunman High School</h3>
                   <h4 class="text-lg mb-2">2013-2016</h4>
                   <p class="leading-tight text-justify">
@@ -192,10 +193,10 @@
                 </div>
                 <div class="col-start-5 col-end-6 md:mx-auto relative mr-10">
                   <div class="h-full w-6 flex items-center justify-center">
-                    <div class="h-full w-1 bg-black pointer-events-none -z-10"></div>
+                    <div class="h-full w-1 bg-black pointer-events-none z-0"></div>
                   </div>
                   <div
-                    class="w-6 h-6 absolute top-1/2 -mt-3 rounded-full bg-cyberpink shadow-lg shadow-neutral-500  -z-10">
+                    class="w-6 h-6 absolute top-1/2 -mt-3 rounded-full bg-cyberpink shadow-lg shadow-neutral-500  z-0">
                   </div>
                 </div>
               </div>
@@ -214,14 +215,14 @@
             <div class="flex flex-col self-center sm:flex-row items-stretch">
               <div
                 class="flex flex-col border-l-2 border-l-cyberblue border-t-2 border-t-cyberlightblue shadow-inner shadow-neutral-500 p-2 basis-1/3 rounded-xl">
-                <button class="p-2 hover:bg-neutral-700 hover:scale-105 basis-1/2 bg-neutral-700" id="gmc"
+                <button class="p-2 hover:bg-neutral-700 hover:scale-105 basis-1/2 bg-neutral-700 rounded-xl" id="gmc"
                   onclick="updateWorkExperienceContent(1)">Gleneagles Medical Center</button>
-                <button class="p-2 hover:bg-neutral-700 hover:scale-105 basis-1/2" id="saf"
+                <button class="p-2 hover:bg-neutral-700 hover:scale-105 basis-1/2 rounded-xl" id="saf"
                   onclick="updateWorkExperienceContent(0)">Singapore Armed Forces</button>
               </div>
 
               <div
-                class="mt-8 bg-neutral-800 p-4 border-r-2 border-b-2 border-r-cyberpink border-b-cyberpurple shadow-lg shadow-neutral-500 rounded-xl sm:ml-8 sm:mt-0">
+                class="mt-8 bg-neutral-800 p-4 border-r-2 border-b-2 border-r-cyberpink border-b-cyberpurple shadow-lg shadow-neutral-500 rounded-xl sm:ml-8 sm:mt-0  hover:shadow-xl hover:shadow-white hover:border-b-8 hover:border-r-8">
                 <div id="workExperienceDetails" class="basis-2/3">
                   <p class="font-bold text-xl mb-2">Mar 2021 - Jul 2021</p>
                   <ul class="list-disc pl-5">
@@ -256,7 +257,7 @@
                   <br>
                   Engineered as part of Orbital 2022, achieving Apollo 11 (Advanced) level.
                 </p>
-                <button class="rounded-full border-4 border-cyberlightblue xl:w-1/4 w-5/12 self-center mt-4 hover:bg-neutral-700 hover:scale-105" onclick="window.open('https://github.com/rjkoh/hALLinOne-Orbital-22')">
+                <button class="rounded-full border-4 border-cyberlightblue xl:w-1/4 w-5/12 self-center mt-4 hover:bg-neutral-700 hover:scale-105 shadow-lg shadow-neutral-500 hover:border-8 hover:shadow-white" onclick="window.open('https://github.com/rjkoh/hALLinOne-Orbital-22')">
                   View Code →
                 </button>
               </div>
@@ -276,7 +277,7 @@
                   <br>
                   Written in Java as backend and JavaFX as frontend. Supported by Git, CSS, CodeCov, Gradle, Jekyll, GitHub Actions, and GitHub pages, as well as UML modelling with PlantUML.
                 </p>
-                <button class="rounded-full border-4 border-cybergreen xl:w-2/5 w-5/12 self-center mt-4 hover:bg-neutral-700 hover:scale-105" onclick="window.open('https://github.com/rjkoh/tp')">
+                <button class="rounded-full border-4 border-cybergreen xl:w-2/5 w-5/12 self-center mt-4 hover:bg-neutral-700 hover:scale-105 shadow-lg shadow-neutral-500 hover:border-8 hover:shadow-white" onclick="window.open('https://github.com/rjkoh/tp')">
                   View Code →
                 </button>
               </div>
@@ -289,7 +290,7 @@
           <p class="text-sm mt-2 text-neutral-400">Click to view codebase!</p>
 
           <div class="flex sm:flex-row flex-wrap justify-between flex-col mt-8">
-            <a class="bg-neutral-800 rounded-xl lg:basis-1/5 sm:basis-2/5 p-4 leading-tight hover:scale-105 hover:bg-neutral-700 mb-5 border-4 border-cyberlightblue shadow-lg shadow-neutral-500" 
+            <a class="bg-neutral-800 rounded-xl lg:basis-1/5 sm:basis-2/5 p-4 leading-tight hover:scale-105 hover:bg-neutral-700 mb-5 border-4 border-cyberlightblue shadow-lg shadow-neutral-500 hover:border-8 hover:shadow-white" 
             href="https://github.com/rjkoh/ip" target="_blank">
               <p class="font-title text-xl mb-2">Duke</p>
               <p>
@@ -299,7 +300,7 @@
               </p>
             </a>
 
-            <div class="bg-neutral-800 rounded-xl lg:basis-1/5 sm:basis-2/5 p-4 leading-tight mb-5 border-4 border-cyberblue shadow-lg shadow-neutral-500">
+            <div class="bg-neutral-800 rounded-xl lg:basis-1/5 sm:basis-2/5 p-4 leading-tight mb-5 border-4 border-cyberblue shadow-lg shadow-neutral-500 hover:border-8 hover:shadow-white hover:scale-105 ">
               <p class="font-title text-xl mb-2">VentBot</p>
               <p>
                 A Telegram bot to vent to and receive encouraging random replies from a list.<br>
@@ -310,7 +311,7 @@
               </p>
             </div>
 
-            <a class="bg-neutral-800 rounded-xl lg:basis-1/5 sm:basis-2/5 p-4 leading-tight hover:scale-105 hover:bg-neutral-700 mb-5 border-4 border-cyberpink shadow-lg shadow-neutral-500" 
+            <a class="bg-neutral-800 rounded-xl lg:basis-1/5 sm:basis-2/5 p-4 leading-tight hover:scale-105 hover:bg-neutral-700 mb-5 border-4 border-cyberpink shadow-lg shadow-neutral-500 hover:border-8 hover:shadow-white" 
             href="https://github.com/rjkoh/Portfolio" target="_blank">
               <p class="font-title text-xl mb-2">This Website</p>
               <p>
@@ -320,7 +321,7 @@
               </p>
             </a>
 
-            <a class="bg-neutral-800 rounded-xl lg:basis-1/5 sm:basis-2/5 p-4 leading-tight hover:scale-105 hover:bg-neutral-700 mb-5 border-4 border-cyberpurple shadow-lg shadow-neutral-500" 
+            <a class="bg-neutral-800 rounded-xl lg:basis-1/5 sm:basis-2/5 p-4 leading-tight hover:scale-105 hover:bg-neutral-700 mb-5 border-4 border-cyberpurple shadow-lg shadow-neutral-500 hover:border-8 hover:shadow-white" 
             href="https://github.com/rjkoh/CS50x" target="_blank">
               <p class="font-title text-xl mb-2">CS50x</p>
               <p>
@@ -330,22 +331,27 @@
               </p>
             </a>
           </div>
+
+          <button class="hover:scale-105 shadow-lg shadow-neutral-500 hover:border-8 hover:shadow-white border-4 border-cybergreen rounded-full w-1/2 md:w-1/3 lg:w-1/4 self-center mt-8 hover:bg-neutral-700"\
+          onclick="window.open('https://github.com/rjkoh?tab=repositories')">
+            View all codebases
+          </button>
         </div>
       </div>
 
       <div id="contact" class="p-20 content-container">
-        <div class="border-r-4 border-b-4 border-r-cyberblue border-b-cyberpurple p-8 rounded-xl shadow-lg shadow-neutral-500 flex flex-col">
+        <div class="border-r-4 border-b-4 border-r-cyberblue border-b-cyberpurple p-8 rounded-xl shadow-lg shadow-neutral-500 flex flex-col hover:border-r-8 hover:border-b-8 hover:shadow-white">
           <p class="text-3xl mb-2 font-subtitle">Get in touch</p>
           <p class="text-sm mb-4 text-neutral-400">If you have any queries, my inbox is always open.</p>
           <div class="flex flex-col w-4/5 lg:w-3/5 self-center">
             <button
-              class="border-4 border-cyberpink w-2/5 self-start rounded-full hover:bg-neutral-700 hover:scale-110 mt-2 align-top"
+              class="border-4 border-cyberpink w-2/5 self-start rounded-full hover:bg-neutral-700 hover:scale-110 mt-2 align-top shadow-lg shadow-neutral-500 hover:border-8 hover:shadow-white"
               id="send" onclick="window.open('mailto:ruijiekoh@u.nus.edu')">Say hello</button>
             <button
-              class="border-4 border-cyberlightblue w-2/5 self-center rounded-full hover:bg-neutral-700 hover:scale-110 align-middle mt-2"
+              class="border-4 border-cyberlightblue w-2/5 self-center rounded-full hover:bg-neutral-700 hover:scale-110 align-middle mt-2 shadow-lg shadow-neutral-500 hover:border-8 hover:shadow-white"
               id="send" onclick="window.open('https://github.com/rjkoh')">View GitHub</button>
             <button
-              class="border-4 border-cybergreen w-2/5 self-end rounded-full hover:bg-neutral-700 hover:scale-110 align-bottom mt-2"
+              class="border-4 border-cybergreen w-2/5 self-end rounded-full hover:bg-neutral-700 hover:scale-110 align-bottom mt-2 shadow-lg shadow-neutral-500 hover:border-8 hover:shadow-white"
               id="send" onclick="window.open('https://www.linkedin.com/in/kohruijie/')">View Linkedin</button>
           </div>
         </div>
