@@ -7,6 +7,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
   <script src="./hallinoneImages.js"></script>
+  <script src="./rcyclImages.js"></script>
   <script src="./WorkExperience.js"></script>
 
   <link rel="stylesheet" href="./style.css">
@@ -297,7 +298,7 @@
               <div
                 class="flex lg:flex-row justify-between flex-col border-r-4 border-b-4 py-8 px-2 border-r-cyberpurple border-b-cyberpink rounded">
                 <div class="lg:order-2 lg:basis-2/3">
-                  <img src="./assets/images/ConnectNUS.png" alt="hALLinOne UI" width="90%" />
+                  <img src="./assets/images/ConnectNUS.png" alt="ConnectNUS UI" width="90%" />
                 </div>
 
                 <div class="flex flex-col self-center md:order-1 my-3 lg:my-0 lg:basis-1/3 lg:mr-8">
@@ -320,6 +321,31 @@
                   </button>
                 </div>
               </div>
+
+              <div
+              class="flex lg:flex-row justify-between flex-col border-l-4 border-b-4 py-8 px-2 border-l-cyberlightblue border-b-cybergreen rounded">
+              <div class="lg:order-2 lg:basis-1/3">
+                <img src="./assets/images/rcycl/1.png" alt="RCYCL UI" id="rcycl"/>
+              </div>
+
+              <div class="flex flex-col self-center md:order-1 my-3 lg:my-0 lg:basis-2/3 lg:mr-8">
+                <h3 class="text-2xl font-title text-cyberpink">RCYCL</h3>
+                <h4 class="sm:text-lg font-subtitle text-cyberlightblue">A mobile application that awards Green CrypoTokens for recycling</h4>
+                <p class="sm:text-base text-sm">
+                 This application was written as an exploration into blockchain and to support to environment. RCYCL is linked to cryptocurrency wallets lke metamask, to award tokens to users for recycling.
+                 RCYCL uses Google Maps API to obtain a user's location and find the nearest recycling bins, and has a QR code scanner to scan QR codes on recycling bins after recycling. Using location services and camera
+                 permissions, RCYCL ensures that the user is near the bin before awarding the token. Written as part of NUS Hacker's HackNRoll 2023 in 24 hours.
+                  <br>
+                  <br>
+                  Written in React Native, supported by NodeJS, Firebase, Git and Ether. Since we are dealing with sensitive information (location, cryptowallet), we tried to ensure proper security as well.
+                </p>
+                <button
+                  class="rounded-full border-4 border-cybergreen p-2 self-center mt-4 hover:bg-neutral-700 hover:scale-105 shadow-lg shadow-neutral-500 hover:border-8 hover:shadow-white"
+                  onclick="window.open('https://github.com/rjkoh/rcycl')">
+                  View Code →
+                </button>
+              </div>
+            </div>
             </div>
           </div>
 
